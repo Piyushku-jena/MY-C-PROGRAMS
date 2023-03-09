@@ -1,22 +1,23 @@
-{
-    int num1, num2, gcd, lcm, remainder, numerator, denominator;
+#include <stdio.h>
+
+int main(){
+    int n1, n2, gcd, lcm, rem, ntr, dtr;
  
     printf("Enter two numbers:\n");
-    scanf("%d %d", &num1, &num2);
+    scanf("%d %d", &n1, &n2);
  
     //To find numerator and denominator
-    numerator = (num1>num2)?num1:num2;
-    denominator = (num1<num2)?num1:num2;
-    remainder = numerator % denominator;
+    ntr = (n1>n2)?n1:n2;
+    dtr = (n1<n2)?n1:n2;
+    rem= ntr % dtr;
  
-    while (remainder != 0)
-    {
-        numerator   = denominator;
-        denominator = remainder;
-        remainder   = numerator % denominator;
+    while (rem != 0) {
+        ntr = dtr;
+        dtr = rem;
+        rem = ntr % dtr;
     }
-    gcd = denominator;
-    lcm = num1 * num2 / gcd;
-    printf("GCD of %d and %d = %d\n", num1, num2, gcd);
-    printf("LCM of %d and %d = %d\n", num1, num2, lcm);
+    gcd = dtr;
+    lcm = n1 * n2 / gcd;
+    printf("GCD of %d and %d = %d\n", n1, n2, gcd);
+    printf("LCM of %d and %d = %d\n", n1, n2, lcm);
 }
