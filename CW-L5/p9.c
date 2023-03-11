@@ -1,5 +1,5 @@
 #include <stdio.h>
-int adDigi(i){
+int adDigi(int i){
     int dgt, an=0;
     while (i > 0) {
         dgt = i % 10;
