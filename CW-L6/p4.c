@@ -5,15 +5,19 @@ int main() {
 
     printf("Enter a 5 digit number: ");
     scanf("%d", &n);
-    rn=0;
 
     while (n > 0) {
-        dgt = n % 10;
-        rn=rn*10+dgt;
-        n /= 10;
+        int og=n;
+        rn=0;
+        while (n > 0) {
+            rn=rn*10+n%10;
+            n /= 10;
+        }
+        printf("reversed: %d  |  %d-%d: %d\n",rn,rn,og,rn-og);
+        n=rn-og;
     }
-    printf("The reversed number is: %d", rn);
-    
+    printf("First negative number: %d\n",n);
+
 
     return 0;
 }
