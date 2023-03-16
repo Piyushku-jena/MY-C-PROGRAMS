@@ -13,13 +13,11 @@ int main() {
             sum += i;
         }
     }
-
     printf("\n");
     if (sum == num) {
         printf("%d is a perfect number.\n", num);
     } else {
         printf("%d is not a perfect number.\n", num);
     }
-
     return 0;
 }
