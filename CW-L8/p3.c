@@ -1,3 +1,23 @@
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+// 6 6 6 6 6 6
+
+// 6 6 6 6 6 6
+// 5 5 5 5 5
+// 4 4 4 4
+// 3 3 3
+// 2 2
+// 1
+// 1 1 1 1 1 1
+// 2 2 2 2 2
+// 3 3 3 3
+// 4 4 4
+// 5 5
+// 6
+
 #include <stdio.h>
 int main() {
           int st, en, i, j, st2, en2, k, l;
@@ -19,10 +39,12 @@ int main() {
                     }
                     printf("\n");
           }
+          int x=en2;
           for( k=st2;k>=en2;k--){
                     for(l=1;l<=k;l++){
-                              printf("%d ",k);
+                              printf("%d ",x);
                     }
+                    x++;
                     printf("\n");
           }
           return 0;

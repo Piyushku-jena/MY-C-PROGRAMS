@@ -1,3 +1,13 @@
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
+
 #include <stdio.h>
 int main() {
           int st, en, i, j, st2, en2, k, l;

@@ -1,19 +1,19 @@
-//     *
-//    * * 
+//       *
+//     * *
 //   * * *
-//  * * * *
-// * * * * *
+// * * * *
 #include <stdio.h>
 int main()
 {
-    int n;
-    printf("Enter the value for n: ");
-    scanf("%d",&n);
-    for (int i=1; i<=n;i++)
+    int row;
+    printf("Enter the Number of Rows: ");
+    scanf("%d", &row);
+    for (int i = 1; i<=row; i++)
     {
-        for(int j =n-i; j>=1; j--)
+        for (int j=row-i; j>0; j--)
         {
-            printf(" ");
+            printf("  ");
+
         }
         for (int k=1; k<=i; k++)
         {
