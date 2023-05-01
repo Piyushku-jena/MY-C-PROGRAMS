@@ -1,6 +1,6 @@
 #include <stdio.h>
 int r,c,x,y;
-void InputMatrix(int m[r][c], int r, int c);
+void InputMatrix(int m[r][c], int ri, int ci);
 void OutputMatrix(int m[r][c], int ro, int co);
 void OutputMatrixS(int m[r][c], int ro, int co);
 void ProcessMatrixA(int m[r][c], int n[r+1][c], int r, int c);

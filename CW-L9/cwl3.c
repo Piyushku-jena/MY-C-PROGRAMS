@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
           int x,i,n;
-          printf("Series: x+x^2+x^3…..x^n \n")
+          printf("Series: x+x^2+x^3…..x^n \n");
           printf("enter the value of x: ");   //series x+x^2+x^3…..x^n
           scanf("%d",&x);
           printf("enter the value of n: ");
