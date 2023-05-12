@@ -4,6 +4,7 @@
         "stdio.h": "c",
         "string.h": "c",
         "P5.C": "cpp",
-        "CWP6.C": "cpp"
+        "CWP6.C": "cpp",
+        "CWP1.C": "cpp"
     }
 }

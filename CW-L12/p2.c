@@ -1,5 +1,5 @@
 #include <stdio.h>
-int r,c,x,y;
+int r,c;
 void InputMatrix(int m[r][c], int ri, int ci);
 void OutputMatrix(int m[r][c], int ro, int co);
 void OutputMatrixS(int m[r][c], int ro, int co);
@@ -57,7 +57,7 @@ void OutputMatrixS(int m[r][c],int ro,int co){
     }
 }
 
-void ProcessMatrixA(int m[r][c], int n[r+1][c], int rp, int cps){
+void ProcessMatrixA(int m[r][c], int n[r+1][c], int r, int c){
     int sum;
 
     for (int i=0 ; i<r ; i++){
@@ -73,7 +73,7 @@ void ProcessMatrixA(int m[r][c], int n[r+1][c], int rp, int cps){
             sum+=c;
         }
         n[r][i]=sum;
-        printf("r%d c%d = %d\n",r+2,i+1,n[r][i]);
+        printf("r%d c%d = %d\n",r+1,i+1,n[r][i]);
     }
     
 }

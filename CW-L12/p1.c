@@ -1,7 +1,7 @@
 #include <stdio.h>
-void OddAnsV2(int a[],int len);
-void OddAnsV2(int a[],int len);
-void OddAnsV2(int a[],int len);
+void InputArray(int a[],int len);
+void PrintArray(int a[],int len);
+void OddAns(int a[],int len);
 void OddAnsV2(int a[],int len);
 
 int main(){
