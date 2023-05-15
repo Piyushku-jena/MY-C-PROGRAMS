@@ -5,7 +5,6 @@ int main(){
 
     printf("Input the string: ");
     scanf(" %[^\n]s",str);
-    int vowels = 0, consonants = 0, words = 1;
     for(int i = 0 ; str[i] != '\0' ; i++){
        if( str[i] >= 65 && str[i] <= 90 ){
         upper++;
@@ -16,5 +15,7 @@ int main(){
        }
     }
     printf("Uppercase: %d \nLowercase: %d \n",upper,lower);
+    printf("Caps reversed sentence: %s\n",str);
+
 
 }
