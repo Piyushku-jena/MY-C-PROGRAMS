@@ -5,7 +5,7 @@ int main(){
         char name[50];
     int i=0;
     printf("Enter your name: ");
-    scanf("%[^\n]s", name);
+    scanf(" %[^\n]s", name);
     while(name[i]!='\0'){
         i++;
     }

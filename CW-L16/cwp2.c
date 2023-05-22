@@ -2,7 +2,6 @@
 void PrintArray(int a[],int len);
 void first_fill(int arr[],int occupants, int n);
 
-
 int main(){
     int r, empty=0, occu;
     printf("Enter no. of elements: ");
