@@ -4,7 +4,7 @@ int main(void) {
   int x, y;
   char o;
 
-  printf("Calculator:\n-----------\nOperations available\t+\t-\t*\t")
+  printf("Calculator:\n-----------\nOperations available + - * / % ");
   printf("Enter the operator: ");
   scanf("%c", &o);
 
